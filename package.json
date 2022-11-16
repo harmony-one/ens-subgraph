@@ -6,8 +6,8 @@
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/",
     "setup-local": "yarn codegen && yarn create-local && yarn deploy-local",
-    "setup-prod": "yarn codegen && yarn create-local && yarn deploy-local",
-    "setup-s1": "yarn codegen && yarn create-local && yarn deploy-local",
+    "setup-prod": "yarn codegen && yarn create-prod && yarn deploy-prod",
+    "setup-s1": "yarn codegen && yarn create-s1 && yarn deploy-s1",
     "create-prod": "graph create graphprotocol/ens --node http://graph.sigmoid.one:8020",
     "deploy-prod": "graph deploy graphprotocol/ens --debug --ipfs http://ipfs.sigmoid.one:5001 --node http://graph.sigmoid.one:8020/ --version-label 0.0.1",
     "create-s1": "graph create graphprotocol/ens --node http://graph-s1.sigmoid.one:8020 subgraph-s1.yaml",
